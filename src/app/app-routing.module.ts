@@ -51,12 +51,12 @@ const routes: Routes = [
 
       }
     ],
-    canActivate: [ MsalGuard ]
+    canActivate: [MsalGuard]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
+  imports: [RouterModule.forRoot(routes, {
     //useHash: true,
     enableTracing: environment.debug.router
   })],
